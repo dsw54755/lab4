@@ -1,0 +1,6 @@
+echo "Dostępne opcje:"
+echo "  --date         : Wyświetla dzisiejszą datę."
+echo "  --gitignore    : Tworzy plik .gitignore ignorujący pliki zawierające 'log'."
+echo "  --logs         : Tworzy automatycznie 100 plików logowych."
+echo "  --logs [N]     : Tworzy automatycznie N plików logowych."
+echo "  --help         : Wyświetla ten komunikat pomocy."
