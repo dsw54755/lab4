@@ -1,1 +1,2 @@
-echo "log*.txt" > .gitignore
+log*.txt
+error*/error*.txt
