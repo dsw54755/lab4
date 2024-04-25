@@ -1,6 +1,9 @@
-echo "Dostępne opcje:"
-echo "  --date         : Wyświetla dzisiejszą datę."
-echo "  --gitignore    : Tworzy plik .gitignore ignorujący pliki zawierające 'log'."
-echo "  --logs         : Tworzy automatycznie 100 plików logowych."
-echo "  --logs [N]     : Tworzy automatycznie N plików logowych."
-echo "  --help         : Wyświetla ten komunikat pomocy."
+show_help() {
+    echo "Dostępne opcje:"
+    echo "  --date, -d         : Wyświetla dzisiejszą datę."
+    echo "  --logs, -l         : Tworzy automatycznie 100 plików logowych."
+    echo "  --help, -h         : Wyświetla ten komunikat pomocy."
+    echo "  --init             : Klonuje całe repozytorium do katalogu w którym został uruchomiony oraz ustawia ścieżkę w zmiennej środowiskowej PATH."
+    echo "  --error [N], -e [N]: Tworzy N plików errorx/errorx.txt, domyślnie 100."
+    echo "  -e [N]             : To samo co --error."
+}
