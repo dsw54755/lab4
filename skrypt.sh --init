@@ -1,0 +1,10 @@
+initialize_repository() {
+    git clone <adres_repozytorium> .
+    export PATH=$PATH:$(pwd)
+}
+
+if [[ "$1" == "--init" ]]; then
+    initialize_repository
+elif [[ "$1" == "--help" || "$1" == "-h" ]]; then
+    show_help
+fi
