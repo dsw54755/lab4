@@ -1,0 +1,12 @@
+create_error_files() {
+    num_files=${1:-100}
+    for ((i=1; i<=$num_files; i++)); do
+        mkdir -p "error$i"
+        echo "Treść pliku" > "error$i/error$i.txt"
+    done
+    echo "Utworzono $num_files plików z błędami."
+}
+
+if [[ "$1" == "--error" || "$1" == "-e" ]]; then
+    create_error_files "$2"
+fi
