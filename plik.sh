@@ -29,4 +29,4 @@ git push <remote> <place>
 git push origin <source>:<destination>
 git fetch origin foo
 git push origin :side
-git fetch origin :bugFix
+git fetch origin :bugFix 
